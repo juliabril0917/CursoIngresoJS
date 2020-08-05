@@ -3,8 +3,36 @@ Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar()
 {
-	var sexoIngresado;
+	let sexoIngresado;
+
 	sexoIngresado = prompt("ingrese f ó m .");
+
+	while ( !(sexoIngresado == 'f' || sexoIngresado == 'F' || sexoIngresado == 'm' || sexoIngresado == 'M')) 
+	 {
+		sexoIngresado = prompt ("Sexo invalido. Ingrese f o m");
+
+     } 
+	 
+	 if (sexoIngresado == 'f' || sexoIngresado == 'F'){
+
+		sexoIngresado = "Femenino";
+
+		document.getElementById("txtIdSexo").value = sexoIngresado;
+
+	 }
+
+	 else if (sexoIngresado == 'm' || sexoIngresado == 'M'){
+
+		sexoIngresado = "Masculino";
+
+		document.getElementById("txtIdSexo").vale = sexoIngresado;
+	 }
+
+	
+	  
+
+
+
 
 
 
