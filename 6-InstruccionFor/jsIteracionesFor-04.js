@@ -1,6 +1,12 @@
 function mostrar()
 {
-	alert("ok");
+	for( let i = 0; ; i++){
+
+		if (i == 50){
+			break;
+		}
+		console.log(i);
+	}
 
 
 
